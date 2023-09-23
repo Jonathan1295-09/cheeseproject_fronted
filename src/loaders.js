@@ -8,7 +8,7 @@ export const indexLoader = async () => {
 
 export const showLoader = async ({params}) => {
     const id = params.id
-    const response = await fetch(url+id)
+    const response = await fetch(url + id)
     const cheese = await response.json()
     return cheese
 }
