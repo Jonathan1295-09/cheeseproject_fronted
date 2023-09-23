@@ -5,3 +5,10 @@ export const indexLoader = async () => {
     const cheese = await response.json()
     return cheese
 }
+
+export const showLoader = async ({params}) => {
+    const id = params.id
+    const response = await fetch(url+id)
+    const cheese = await response.json()
+    return cheese
+}
