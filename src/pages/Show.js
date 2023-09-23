@@ -13,13 +13,13 @@ function Show (props) {
     return (
         <div style={div}>
             <h1>{post.name}</h1>
-            <h2>{post.countryoforigin}</h2>
+            <h2>{post.countryorigin}</h2>
             <h2>{post.type}</h2>
             <div style={{ textAlign: "center" }}>
                 <h2>Update Cheese</h2>
                 <Form method="post" action= {`/update/${post.id}`}>
                     <input type="text" name="name" defaultValue={post.name}/>
-                    <input type="text" name="countryoforigin" defaultValue={post.countryoforigin}/>
+                    <input type="text" name="countryorigin" defaultValue={post.countryorigin}/>
                     <input type="text" name="type" defaultValue={post.type}/>
                     <button>Update Cheese</button>
                 </Form>
